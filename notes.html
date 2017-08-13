@@ -1,0 +1,86 @@
+<html>
+
+	<head>
+
+		<link type="text/css" rel="stylesheet" href="secret agent sosiety.css" />
+
+		<script>
+
+			function answer(){
+
+			var radio = document.getElementsByName("trivia");
+
+			var selection = false;
+
+			var message = "";
+
+			for( var i = 0; i < radio.length; i++) {
+
+			   if(radio[i].value == "kiss chairs") {
+
+			      selection = true;
+
+			   } //end if statement
+
+			} //end for loop
+
+			if(selection == true) {
+
+			message = message + "<b><p style='color:#00004d'>on-board 9626 Hanna price<BR><BR>EE_Last name city San Fraincisco<BR><BR>659 work state nanswer<BR><BR>Jessie 415-662_1462<BR><BR>press AlttFA tD cToSe FfirFot or other<BR><BR>mozilla-based browser<br><BR> provider>sQLoLEDB; &_ server=cm-nckm-ds002dev1; &_ <br><BR>utD=dots_RW;oc pwd=Jastatr3;c_ Databace=ethrbpr-DEV <BR><center><b>AGENTS:<BR>Mark Anderson Hoffman<BR>Megan Ann Hoffman<BR>Elizabeth Pamela Hoffman</b></center> </p></b>";
+			} else {
+			message = message + "<b><p style='color:red'>WRONG!!!!!!</p></b>";
+			}
+			document.getElementById("response").innerHTML = message;
+
+			} //end function answer
+		</script>
+
+		<link type="text/css" rel="stylesheet" href="secret agent sosiety.css" />
+
+		<title>
+
+			notes
+
+		</title>
+
+	</head>
+
+	<body>
+
+		<footer class="footer">
+
+			<b>
+				<center>
+					SECRET AGENT SOSIETY
+				</center>
+			</b>
+
+		</footer>
+			<header class="der">
+
+			<center>
+
+				NOTES
+
+			</center>
+
+		</header>
+		
+		<center>
+
+			<form>
+
+				<div id="response">
+
+				</div>
+            <input type="password" name="trivia" value="">password
+
+            <br>
+            
+            <input id="bbackground" type="button" value="submit" onclick="answer()">	
+
+		</center>
+		
+	</body>
+
+</html>
